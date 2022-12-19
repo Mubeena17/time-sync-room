@@ -1,0 +1,13 @@
+{
+    "name": "time-sync-room",
+    "version": "0.1.0",
+    "description": "Time synced socket rooms",
+    "main": "server/index.js",
+    "author": "Mubeena",
+    "license": "MIT",
+    "dependencies": {
+        "socket-ntp": "^0.1.0",
+        "socket.io": "^4.5.4",
+        "socket.io-client": "^4.5.4"
+    }
+}
