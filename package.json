@@ -1,6 +1,6 @@
 {
     "name": "time-sync-room",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Time synced socket rooms",
     "main": "server/index.js",
     "author": "Mubeena",
