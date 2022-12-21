@@ -52,6 +52,10 @@ room.pause();
 room.reset();
 ```
 
+## Server Setup
+
+### Connect with socket
+
 ```javascript
 import TimeSyncRoom from "time-sync-room";
 const express = require("express");
