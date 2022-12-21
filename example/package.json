@@ -1,0 +1,24 @@
+{
+    "name": "y",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./server/server.js",
+        "dev:server": "nodemon ./server/server.js",
+        "dev:client": "npm start --prefix client",
+        "dev": "concurrently \"npm:dev:*\" --kill-others  --prefix-colors cyan,yellow",
+        "test": "jest"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.6.0",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "nodemon": "^2.0.20",
+        "socket-ntp": "^0.1.0",
+        "socket.io": "^4.5.4",
+        "time-sync-room": "^0.1.0"
+    }
+}
