@@ -22,21 +22,22 @@ TimeSyncRoom.init(URL);
 
 //Join or create a socket room, returns object with methods
 let room = TimeSyncRoom.join(roomName);
+
+//getSyncedTime method will return current synced time
+let syncedTime = room.getSyncedTime();
 ```
 
 ### Listen for the stopwatch status
 
 ```javascript
-
 //listen for the stopwatch timer
-room.timer((time) => time));
+room.timer((time) => time);
 
 //listen for stopwatch pause
-room.onPause((isPaused) => isPaused));
+room.onPause((isPaused) => isPaused);
 
 //listen for stopwatch running
-room.onActive((isActive) =>  setIsActive(isActive));
-
+room.onActive((isActive) => isActive);
 ```
 
 ### Stopwatch method
@@ -64,6 +65,13 @@ const app = express();
 //create socket connection
 const server = require("http").Server(app);
 TimeSyncRoom.init(server);
+```
+
+# Run example
+
+```bash
+npm install
+npm run dev
 ```
 
 ## Contributing
